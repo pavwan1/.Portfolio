@@ -1,0 +1,70 @@
+.navbar {
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.666);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #00adb5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #ff5722;
+  transform: scale(1.05);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4500;
+  text-shadow: 0 0 10px #ff5722, 0 0 20px #ff9800;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px #ff5722;
+  }
+  100% {
+    opacity: 0.8;
+    text-shadow: 0 0 20px #ff9800;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 180px; /* handles spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  position: relative;
+  transition: 1.2s;
+  font-size: 1.2rem;
+}
+.navbar a:hover {
+  color: #00ffff;
+  -webkit-text-stroke: 0px;
+  text-shadow: 0 0 5px #314c4c, 0 0 10px #00ffff9b;
+}

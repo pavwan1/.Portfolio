@@ -1,0 +1,98 @@
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(170, 126, 126, 0.3);
+  border-radius: 8px;
+  margin: 50px;
+  margin-top: 50px;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffff;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Adjust based on your design */
+  max-width: 1450px;
+  padding: 20px;
+  z-index: 2;
+  color: rgb(251, 251, 251);
+}
+
+.about-content {
+  backdrop-filter: blur(10px); /* the actual blur magic */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(170, 126, 126, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+}
+
+.left {
+  width: 80%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
+
+ul {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.resume-btn,
+.linkedin-btn {
+  background-color: #5c5151;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.resume-btn:hover,
+.linkedin-btn:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.left {
+  color: #ffff opacity;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s ease, box-shadow 0.9s ease,
+    background 0.9s ease-in-out;
+}
+
+.left:hover {
+  background: #3e3d3d;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(252, 249, 249, 0.5);
+  opacity: 1;
+}

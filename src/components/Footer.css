@@ -1,0 +1,15 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional, for vertical alignment */
+  height: 60px; /* set height if you want vertical centering */
+}

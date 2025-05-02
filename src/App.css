@@ -1,38 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Also apply to main App div */
+.App {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* adjust based on your navbar height */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact input,
+  .contact textarea,
+  .contact button {
+    width: 90%; /* adjust for small screens */
+    margin: 10px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  h1,
+  h2,
+  p {
+    font-size: 1.2rem; /* Adjust font size for readability on mobile */
+  }
+}
+
+section {
+  scroll-margin-top: 80px; /* Adjust based on navbar height */
+}
+
 .App {
   text-align: center;
+  background-image: url("../public/Images/IMG1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100%;   
+  margin-top: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scroll-to-top:hover {
+  background-color: gold;
 }

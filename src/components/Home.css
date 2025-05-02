@@ -1,0 +1,59 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  min-height: 100vh;
+}
+
+/* Animation for the name */
+.home-content h1 {
+  opacity: 0;
+  animation: slideInFromLeft 3s ease-in-out forwards;
+  transform: translateX(-145px);
+  font-weight: bolder;
+  font-size: 1.9rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-145px); /* Start from a lower position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Final position, no translation */
+  }
+}
+
+.home-content {
+  flex: 1;
+  color: white;
+  text-align: left;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px dotted rgb(73, 37, 37);
+}
+.welcome-text {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  color: #ccc;
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

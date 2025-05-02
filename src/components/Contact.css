@@ -1,0 +1,89 @@
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  border: 1px solid rgb(170, 126, 126, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  margin: 50px;
+  margin-top: 150px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffff;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px; /* Ensures responsiveness */
+  background: #3e3d3d;
+  border-radius: 10px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-left:hover,
+.contact-right:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(252, 249, 249, 0.5);
+}
+
+.contact-left h3,
+.contact-right h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-left P,
+.contact-right P {
+  font-size: 1.05em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-left li {
+  margin: 10px 0;
+}
+
+.contact-left a,
+.contact-right .email-link {
+  margin-top: 10px;
+  color: #0f7ff8;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.contact-left a:hover,
+.contact-right .email-link:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+.contact-right .email-link {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.contact-right .email-link:hover {
+  background-color: #3e3d3d;
+  color: aqua;
+}
