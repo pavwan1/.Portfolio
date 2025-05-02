@@ -12,7 +12,7 @@ const Home = () => {
         </p>
       </div>
       <div className="home-image">
-        <img src="/images/pavan1.jpg" alt="pavan" />
+        <img src="/images/pavan_new.jpg" alt="pavan" />
       </div>
     </section>
   );
