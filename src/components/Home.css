@@ -37,14 +37,15 @@
   display: flex;
   justify-content: center;
 }
-
+/*
 .home-image img {
   width: 100%;
   max-width: 300px;
   height: auto;
   border-radius: 50%;
   border: 3px dotted rgb(73, 37, 37);
-}
+}*/
+
 .welcome-text {
   font-size: 1.9rem;
   margin-bottom: 15px;
