@@ -54,7 +54,7 @@ Let’s build cool stuff together!
 ## Contact
 
  GitHub: [PavanKumarReddy](https://github.com/pavwan1)  
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/pavan-kumar-reddy-b-353051249/)  
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/pavan-kumar-reddy-b-353051249/)  
 - Email: pavanreddy20021@gmail.com
 
 ## License
